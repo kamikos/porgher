@@ -43,7 +43,7 @@ export default function Gallery() {
 	};
 
 	return (
-		<div className="w-full h-auto py-20 flex flex-col items-center justify-center bg-background font-albert-sans">
+		<div className="w-full h-auto py-20 flex flex-col items-center justify-center bg-background font-albert-sans max-w-screen overflow-hidden">
 			<div className="text-center mb-16 px-4">
 				<h2 className="text-4xl md:text-6xl font-medium uppercase text-[#1a1919] max-w-[900px]">
 					A Visual Journey {'\u00A0'} Through My Best Work.

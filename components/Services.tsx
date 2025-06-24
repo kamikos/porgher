@@ -145,7 +145,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-[#1a1919] text-[#fcfcf6] py-20 px-4 sm:px-6 lg:px-8 font-albert-sans"
+      className="bg-[#1a1919] text-[#fcfcf6] py-20 px-4 sm:px-6 lg:px-8 font-albert-sans max-w-screen overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">

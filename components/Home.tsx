@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <section className="grid min-h-screen grid-cols-7 grid-rows-6">
+    <div className="min-h-screen bg-background text-foreground max-w-screen overflow-hidden font-albert-sans">
+      <section className="grid min-h-screen grid-cols-7 grid-rows-5">
         {/* Left Image */}
         <div className="relative bg-gray-300 col-span-3 row-span-4">
           <Image
