@@ -1,12 +1,11 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground max-w-screen overflow-hidden font-albert-sans">
-      <section className="grid min-h-screen grid-cols-7 grid-rows-5">
+    <div className="min-h-screen bg-background text-foreground max-w-screen overflow-hidden font-albert-sans px-6">
+      <section className="grid min-h-screen grid-cols-7 grid-rows-5 gap-x-6">
         {/* Left Image */}
-        <div className="relative bg-gray-300 col-span-3 row-span-4">
+        <div className="relative bg-[#c4c4c4] col-span-3 row-span-4">
           <Image
             src="/placeholder.svg?height=800&width=600"
             alt="Photography hero image"
@@ -31,7 +30,7 @@ export default function Home() {
               <div className="col-span-1 row-span-8">
                 {/* Vertical PHOTOGRAPHER text */}
                 <div
-                  className="text-8xl font-bold text-gray-200 select-none"
+                  className="text-8xl font-bold text-foreground opacity-10 select-none"
                   style={{
                     writingMode: "vertical-rl",
                     textOrientation: "mixed",
@@ -44,43 +43,57 @@ export default function Home() {
               <div className="row-span-5"></div>
               <div className="col-span-4 row-span-3">
                 <div className="space-y-6">
-                  <div className="w-16 h-px bg-black"></div>
+                  <div className="w-26 h-px bg-black"></div>
                   <div>
-                    <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                      PASSION MEETS PRECISION
+                    <h2 className="text-2xl font-medium font-albert-sans text-foreground mb-2">
+                      PASSION MEETS PRECISION{"\n"}
+                      BEHIND EVERY SHOT.
                     </h2>
-                    <p className="text-lg text-gray-900">BEHIND EVERY SHOT.</p>
                   </div>
-                  <Button
-                    variant="outline"
-                    className="bg-white text-black border-black hover:bg-gray-50 px-8 py-3 rounded-full"
-                  >
-                    EXPLORE NOW
-                  </Button>
+                  <div className="hidden md:flex flex-col items-center gap-4 flex-shrink-0">
+                    <button className="group flex items-center hover:scale-105 transition-transform duration-300">
+                      <div className="relative size-24 flex-shrink-0">
+                        <svg
+                          className="transition-transform duration-500 ease-in-out group-hover:rotate-180 group-hover:scale-110"
+                          width="94"
+                          height="94"
+                          viewBox="0 0 94 94"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="47"
+                            cy="47"
+                            r="45.5"
+                            stroke="#1a1919"
+                            strokeWidth="3"
+                            className="transition-colors duration-300 group-hover:stroke-[#1a1919]"
+                          />
+                        </svg>
+                      </div>
+                      <span className="relative -ml-8 bg-background text-foreground py-1 pl-2 pr-4 text-xl font-medium uppercase transition-colors duration-300">
+                        Explore now
+                      </span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
             {/* right side */}
-            <div className="col-span-1 row-span-4 flex flex-col justify-between items-center">
-                  <div>
-                    <p className="text-gray-600 leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt labore et dolore magna aliqua. Ut
-                    enim minim
-                    </p>
-                    <Button className="bg-black text-white hover:bg-gray-800 px-8 py-3">
+            <div className="col-span-1 row-span-4 flex flex-col justify-between items-start">
+              <div className="flex flex-col items-start max-w-md space-y-4">
+                <p className="text-gray-600 leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt labore et dolore magna aliqua. Ut
+                  enim minim
+                </p>
+                <div className="w-48 h-14 p-2.5 bg-[#1a1919] inline-flex justify-center items-center gap-2.5">
+                  <div className="justify-start text-[#fcfcf6] text-xl font-medium font-albert-sans">
                     Get Started
-                    </Button>
-
                   </div>
-                <div className="w-48 h-64 lg:w-64 lg:h-80 relative bg-gray-300 ml-8">
-                  <Image
-                    src="/placeholder.svg?height=320&width=256"
-                    alt="Photography sample"
-                    fill
-                    className="object-cover"
-                  />
                 </div>
+              </div>
+              <div className="w-96 h-[537px] bg-[#c4c4c4]" />
             </div>
           </div>
         </div>

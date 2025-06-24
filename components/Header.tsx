@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     // TODO: marginesy/kontener
-    <header className="relative bg-background text-foreground flex items-center py-4 w-full"> 
+    <header className="relative bg-background text-foreground flex items-center py-4 px-6 w-full"> 
       <div className="flex justify-between items-center space-x-4 w-full">
         <Link
           href="/"

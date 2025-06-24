@@ -152,32 +152,32 @@ export default function Services() {
           <h2 className="w-full max-w-2xl text-5xl md:text-6xl font-normal uppercase">
             Creative Photography, Tailored for You.
           </h2>
-            <div className="hidden md:flex flex-col items-center gap-4 flex-shrink-0">
+          <div className="hidden md:flex flex-col items-center gap-4 flex-shrink-0">
             <button className="group flex items-center hover:scale-105 transition-transform duration-300">
               <div className="relative size-24 flex-shrink-0">
-              <svg
-                className="transition-transform duration-500 ease-in-out group-hover:rotate-180 group-hover:scale-110"
-                width="94"
-                height="94"
-                viewBox="0 0 94 94"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                cx="47"
-                cy="47"
-                r="45.5"
-                stroke="#FCFCF6"
-                strokeWidth="3"
-                className="transition-colors duration-300 group-hover:stroke-[#C4C4C4]"
-                />
-              </svg>
+                <svg
+                  className="transition-transform duration-500 ease-in-out group-hover:rotate-180 group-hover:scale-110"
+                  width="94"
+                  height="94"
+                  viewBox="0 0 94 94"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="47"
+                    cy="47"
+                    r="45.5"
+                    stroke="#FCFCF6"
+                    strokeWidth="3"
+                    className="transition-colors duration-300 group-hover:stroke-[#C4C4C4]"
+                  />
+                </svg>
               </div>
               <span className="relative -ml-8 bg-[#1a1919] py-1 pl-2 pr-4 text-xl font-medium uppercase transition-colors duration-300 group-hover:text-[#C4C4C4]">
-              Explore now
+                Explore now
               </span>
             </button>
-            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 grid-rows-5">
@@ -192,7 +192,7 @@ export default function Services() {
                   : "border border-[#fcfcf6]"
               }`}
             >
-                <div className="mb-8">{service.icon}</div>
+              <div className="mb-8">{service.icon}</div>
               <div className="mt-auto">
                 <h3 className="text-3xl font-medium uppercase mb-4 text-[#FCFCF6]">
                   {service.title}
