@@ -20,8 +20,8 @@ export default function Home() {
           {/* Top Quote */}
           <div className="grid grid-cols-2 grid-rows-5">
             <h1 className="col-span-2 row-span-1 text-2xl lg:text-3xl font-light italic leading-relaxed text-gray-900">
-              PHOTOGRAPHY ISN'T JUST ABOUT TAKING PICTURES; IT'S ABOUT TELLING
-              YOUR STORY. LET'S CREATE SOMETHING EXTRAORDINARY TOGETHER, ONE
+              PHOTOGRAPHY ISN&apos;T JUST ABOUT TAKING PICTURES; IT&apos;S ABOUT TELLING
+              YOUR STORY. LET&apos;S CREATE SOMETHING EXTRAORDINARY TOGETHER, ONE
               SHOT AT A TIME.
             </h1>
             {/* left side */}

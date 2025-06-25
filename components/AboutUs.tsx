@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { p } from "framer-motion/client";
 
 export default function AboutUs() {
   const [photoIndex, setPhotoIndex] = useState(0);
