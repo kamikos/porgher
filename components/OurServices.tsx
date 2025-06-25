@@ -43,7 +43,7 @@ export default function OurServices() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:left-1/4 lg:-translate-x-0">
           <motion.div
             style={{ y: leftImageY }}
-            className="w-48 h-72 md:w-60 md:h-80 bg-[#c4c4c4] transform rotate-12 flex-shrink-0 shadow-2xl pointer-events-auto"
+            className="w-48 h-72 md:w-60 md:h-80 bg-[#c4c4c4] transform -rotate-12 flex-shrink-0 shadow-2xl pointer-events-auto"
           />
         </div>
         
@@ -51,7 +51,7 @@ export default function OurServices() {
         <div className="absolute top-1/2 right-1/2 transform translate-x-1/2 -translate-y-1/2 lg:right-1/4 lg:translate-x-0">
           <motion.div
             style={{ y: rightImageY }}
-            className="w-48 h-72 md:w-60 md:h-80 bg-[#c4c4c4] transform -rotate-12 flex-shrink-0 shadow-2xl pointer-events-auto"
+            className="w-48 h-72 md:w-60 md:h-80 bg-[#c4c4c4] transform rotate-12 flex-shrink-0 shadow-2xl pointer-events-auto"
           />
         </div>
       </div>

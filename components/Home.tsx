@@ -40,17 +40,17 @@ export default function Home() {
                   PHOTOGRAPHER
                 </div>
               </div>
-              <div className="row-span-5"></div>
-              <div className="col-span-4 row-span-3">
-                <div className="space-y-6">
-                  <div className="w-26 h-px bg-black"></div>
-                  <div>
+              <div className="row-span-4"></div>
+              <div className="col-span-4 row-span-4 h-full">
+                <div className="space-y-6 flex flex-col justify-between h-full">
+                  <div className="pl-6">
+                  <div className="w-30 h-1 mb-4 bg-black"></div>
                     <h2 className="text-2xl font-medium font-albert-sans text-foreground mb-2">
                       PASSION MEETS PRECISION{"\n"}
                       BEHIND EVERY SHOT.
                     </h2>
                   </div>
-                  <div className="hidden md:flex flex-col items-center gap-4 flex-shrink-0">
+                  <div className="hidden md:flex flex-col items-end gap-4 flex-shrink-0">
                     <button className="group flex items-center hover:scale-105 transition-transform duration-300">
                       <div className="relative size-24 flex-shrink-0">
                         <svg
