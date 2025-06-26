@@ -7,12 +7,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    // TODO: marginesy/kontener
-    <header className="relative bg-background text-foreground flex items-center py-4 px-6 w-full"> 
+    <header className="relative bg-background text-foreground flex items-center py-4 px-4 sm:px-6 w-full"> 
       <div className="flex justify-between items-center space-x-4 w-full">
         <Link
           href="/"
-          className="text-[32px] font-semibold font-albert-sans uppercase z-50"
+          className="text-2xl sm:text-[32px] font-semibold font-albert-sans uppercase z-50"
           onClick={() => setIsMenuOpen(false)}
         >
           Progher.studio
@@ -52,7 +51,7 @@ export default function Header() {
           </button>
 
           {isMenuOpen && (
-            <nav className="fixed inset-0 bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center space-y-8 text-2xl z-40">
+            <nav className="fixed inset-0 bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center space-y-6 sm:space-y-8 text-xl sm:text-2xl z-40">
               <Link href="/" className="hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>
                 Home
               </Link>
